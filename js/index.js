@@ -104,6 +104,7 @@ window.addEventListener("DOMContentLoaded", () => {
         if (radioElement.checked) {
           if (quizItem.a == i) {
             score++;
+            clearInterval(timer);
             ////Task 2 - change background color of li element here
             liElement.style.backGroundColor = "green";
           } else {
@@ -131,7 +132,6 @@ window.addEventListener("DOMContentLoaded", () => {
       seconds--; ////this will decrement the secs by 1
       if (seconds === -1) {
         //// if get to -1 AKA 0, it will reset the timer, calculate the score (relates to the changing colours) and pop up will apear to say times up
-        clearInterval(timer);
         calculateScore();
         alert(`Times up - ⏲`);
       }
