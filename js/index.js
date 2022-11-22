@@ -95,9 +95,9 @@ window.addEventListener("DOMContentLoaded", () => {
           //change background color of li element here
           if (radioElement.checked) {
             score++;
-            liElement.style.backfroundColor = 'green';
+            liElement.style.backGroundColor = 'green';
         } else {
-          liElement.style.backfroundColor = 'red';
+          liElement.style.backGroundColor = 'red';
         } ;
         //if (radioElement.checked) {}
           // code for task 1 goes here
@@ -126,6 +126,7 @@ function myFunction() {
     d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
 }
 
+////tryed to work out another way of a countdown timer
 //let countDown = 5;
 //let countDownTimer = setInterval(() => {
   //if (timeLeft <= 0) {
@@ -135,11 +136,15 @@ function myFunction() {
   //timeLeft -= 1;
 //}, 1000);
 
+
+////possably created submit and reset of the buttons
 //document.getElementById("#btnSubmit").submit();
 //document.getElementById("btnReset").reset();
 
 
-////Submit Button 
+
+
+////Submit Button - think this is right but unsure where to place in code - also may have googled Answer
 //const button = document.getElementById("btnSubmit");
 //button.addEventListener('click', (function(event)){
   //const totalScore = calculateScore(this);
